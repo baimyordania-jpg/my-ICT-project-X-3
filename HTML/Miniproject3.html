@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniProject3_Ibrahim-khalilulloh(X3)</title>
+
+    <style>
+        .header{
+            text-align: center;
+            background-color: rgb(10, 10, 52);
+            color: white;
+            padding: 5px;
+            
+            
+        }
+        .navbar{
+            text-align: center;
+            background-color: rgb(46, 46, 72);
+            padding: 12px;
+            word-spacing: 25px;
+            
+        }
+        .section1{
+            letter-spacing: 1px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            align-items: flex-start;
+            align-content: center;
+            gap: 5px;
+
+            height: 500px;
+            padding: 10px;
+            background-color:rgb(252, 252, 252);
+            border: 2px solid rgb(255, 255, 255);
+        }
+        .item{
+            width: 450px;
+            height: 150px;
+            background-color:rgb(246, 246, 246);
+            border-left-style: solid;
+            border-color: plum;
+            border-width: 7px;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items:flex-start;
+            gap: 8px;
+        }
+        .item h3, .item p{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Al-Abidin Bilingual Boarding School</h1><br>
+        <p>Information and Communication Technology Program</p>
+
+    </header>
+    <nav class="navbar">
+        <a href="#" style="color:white;">Home</a>
+        <a href="#" style="color: white;">About</a>
+        <a href="#" style="color: white;">Program</a>
+        <a href="#" style="color: white;">Contact</a>
+    </nav>
+    <section class="section1">
+        <h2>Program Description</h2>
+        <p>The ICT Program is designed to help students develop digital skills, problem-solving abilities, and creativity in technology-based learning
+            Students will learn web development, programming, database management, and Internet of Things project through practical activities.
+        </p>
+    </section>
+    <div>
+        <h2>Learning Roadmap</h2>
+            <div class="container">
+                <div class="item">
+                    <h3><b>Level X</b></h3>
+                    <p>HTML, CSS, Javascript, PHP, and MySQL</p>
+                </div>
+                <div class="item">
+                    <h3><b>Level XI</b></h3>
+                    <p>Internet of Things, MQTT, sensors, and web dashboards.</p>
+                </div>
+                <div class="item">
+                    <h3><b>Level XII</b></h3>
+                    <p>Python programming fundamentals and final project</p>
+                </div>
+            </div>
+    </div>
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </section>
+</body>
+</html>
