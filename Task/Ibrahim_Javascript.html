@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Checker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+
+        <h1 class="text-2xl font-bold text-center text-indigo-600 mb-6">
+            Student Grade Checker
+        </h1>
+
+        <label class="block mb-2">Student Name</label>
+        <input type="text" id="name" class="w-full border rounded-lg p-3 mb-4" placeholder="Enter your name">
+
+        <label class="block mb-2">Exam Score</label>
+        <input type="number" id="score" min="0" max="100" class="w-full border rounded-lg p-3 mb-4"
+            placeholder="Enter score (0-100)">
+
+        <button
+            onclick="checkGrade()"
+            class="w-full bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700"
+        >
+            Check Grade
+        </button>
+
+        <div id="result" class="mt-6 text-center"></div>
+
+    </div>
+
+    <script>
+        function checkGrade() {
+
+            // Get input values
+            let name = document.getElementById("name").value;
+            let score = Number(document.getElementById("score").value);
+
+            let grade;
+            let status;
+
+            // Check grade using conditions
+            if (score >= 85 && score <= 100) {
+                grade = "A";
+            } else if (score >= 70) {
+                grade = "B";
+            } else if (score >= 60) {
+                grade = "C";
+            } else if (score >= 50) {
+                grade = "D";
+            } else if (score >= 0) {
+                grade = "E";
+            } else {
+                grade = "Invalid Score";
+            }
+
+            // Check pass or fail
+            if (score >= 70 && score <= 100) {
+                status = "Pass";
+            } else {
+                status = "Fail";
+            }
+
+            // Display result
+            document.getElementById("result").innerHTML =
+                "<h2 class='text-xl font-bold'>Result</h2>" +
+                "<p>Name: " + name + "</p>" +
+                "<p>Score: " + score + "</p>" +
+                "<p>Grade: " + grade + "</p>" +
+                "<p>Status: " + status + "</p>";
+        }
+    </script>
+
+</body>
+</html>
