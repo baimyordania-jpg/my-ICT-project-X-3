@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="border-1 border-black-400 shadow-md shadow-grey-200 rounded-sm mx-20 mt-20 p-5 bg-lime-200">
+        <h1 class="text-5xl font-bold uppercase text-purple-500 text-shadow-sm text-shadow-grey-200 text-center"> Student Creativity Festival🎁</h1>
+        <p class="text-pink-500 text-center">Showcase Your Creativity, Skills and Innovative Ideas</p>
+    </header>
+    <section class="border-2 border-lime-400 my-15 mx-100">
+        <div>
+        <label class="p-5">Fullname :</label>
+        <input type="text" name="name" placeholder="enter your fullname" required class="mx-20 px-30 mt-5 border-2 border-purple-200"><br>
+
+        <label class="p-5">Class :</label>
+        <select name="Class" required class="mx-40 px-30 mt-5 border-1 border-purple-200">
+            <option value="class">X</option>
+            <option value="class">XI</option>
+            <option value="class">XII</option>
+        </select><br>
+
+        <label class="p-5 pr-60">Gender :</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <br>
+
+        <label class="p-5">Competition Category :</label>
+        <select name="lomba" class="ml-20 mr-30 pl-5 pr-10 mt-5 border-1 border-purple-200">
+            <option value="lomba">Web Development</option>
+            <option value="lomba">Iot Project</option>
+            <option value="lomba">Graphic Design</option>
+            <option value="lomba">Public Speaking</option>
+            <option value="lomba">Photography</option>
+        </select><br>
+
+        <label class="p-5 pr-40">Participation Type :</label>
+        <input type="radio" name="type">Individual
+        <input type="radio" name="type">Team
+        <br>
+
+        <label class="p-5">Team Name :</label>
+        <input type="text" name="teamname" placeholder="Enter your team's name" class="mx-20 px-30 mt-5 border-2 border-purple-200"><br>
+
+        <label class="p-5">Contact Number :</label>
+        <input type="number" name="number" placeholder="08xxxxxxxxxx" class="mx-10 px-20 mt-5 border-2 border-purple-200"><br>
+
+        <label class="p-5">Project Description :</label><br>
+        <textarea rows="3" cols="60" placeholder="Describe your project or competition entry..." required class="mx-20 px-10 mt-5 border-2 border-purple-200"></textarea><br>
+
+         <button type="submit" class="bg-lime-200 border-2 border-purple-500 my-5 ml-70">Registration Now</button>
+        </div>
+    </section>
+
+        <table border="1" class="mx-130 my-20">
+            <thead class="bg-lime-200">
+                <tr>
+                    <th>No</th>
+                    <th>Participant</th>
+                    <th>Class</th>
+                    <th>Category</th>
+                    <th>Team</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody class="bg-grey-200">
+                <tr>
+                    <td>1.</td>
+                    <td>Ghavin candra</td>
+                    <td>X</td>
+                    <td>Iot Project</td>
+                    <td>SmartX</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Ghavan candra</td>
+                    <td>XI</td>
+                    <td>Web Development</td>
+                    <td>BurningUp</td>
+                    <td>Registered</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>

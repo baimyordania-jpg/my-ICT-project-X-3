@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Progress Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-background"></div>
+
+  <main class="app-container">
+    <!-- OPENING -->
+    <section class="slide active" id="slide-0">
+      <div class="opening-card">
+        <div class="opening-icon">✓</div>
+        <p class="small-label">WEEKLY PROGRESS TRACKER</p>
+        <h1>Build Your Progress<br><span>Every Day</span></h1>
+
+        <p class="opening-text">
+          Save your daily tasks, write your progress, and keep your weekly history.
+          Your data stays saved even after you close the website.
+        </p>
+
+        <div class="user-box">
+          <label for="usernameInput">Username / Name</label>
+          <input id="usernameInput" type="text" maxlength="30" placeholder="Enter your name">
+          <small id="usernameError"></small>
+        </div>
+
+        <div class="opening-actions">
+          <button class="btn btn-start" onclick="startCurrentWeek()">Start / Continue Week</button>
+          <button class="btn btn-new-week" onclick="startNewWeek()">＋ Start New Week</button>
+        </div>
+
+        <div class="saved-week-box">
+          <div class="saved-week-heading">
+            <strong>Saved Weekly Progress</strong>
+            <span id="savedCount">0 saved</span>
+          </div>
+          <div id="savedWeeks"></div>
+        </div>
+
+        <p class="creator">Weekly data is stored locally in your browser.</p>
+      </div>
+    </section>
+
+    <!-- DAY SLIDES -->
+    <section class="slide" id="slide-1"></section>
+    <section class="slide" id="slide-2"></section>
+    <section class="slide" id="slide-3"></section>
+    <section class="slide" id="slide-4"></section>
+    <section class="slide" id="slide-5"></section>
+    <section class="slide" id="slide-6"></section>
+  </main>
+
+  <div class="day-indicator" id="dayIndicator"></div>
+
+  <div class="finish-popup" id="finishPopup" aria-live="polite">
+    <div class="finish-popup-card">
+      <div class="finish-popup-icon">✓</div>
+      <div>Progress selesai</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

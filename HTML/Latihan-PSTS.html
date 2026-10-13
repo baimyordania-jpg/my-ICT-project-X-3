@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="border-1 border-pink-200 shadow-md shadow-grey-200 rounded-sm mx-20 mt-20 p-5">
+        <h1 class="text-5xl font-bold uppercase text-purple-500 text-shadow-sm text-shadow-grey-200 text-center"> Computer Lab Reservation System😊</h1>
+    </header>
+    <section class="text-center">
+        <h2 class="text-3xl font-bold text-pink-500 mt-30">School computer lab reservation form</h2><br>
+        <p class="text-2md font-bold mt-0">(Required field)</p>
+
+        <label>Fullname</label>
+        <input type="text" name="name" placeholder="enter your fullname" required><br>
+        
+        <label>Status</label>
+        <input type="radio" name="borrow">Teacher
+        <input type="radio" name="borrow">Student
+        <input type="radio" name="borrow">Organization<br>
+        
+        <label>Purpose</label>
+        <input type="text" placeholder="Practicum practice, osis meeting, etc"><br>
+
+        <label>Borrowed lab</label>
+        <select name="" id="">
+            <option>Lab 1 (Software)</option>
+            <option>Lab 2 (Hardware)</option>
+        </select>
+    </section>
+</body>
+</html>
